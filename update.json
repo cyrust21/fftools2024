@@ -1,0 +1,9 @@
+{
+"UpdateVersion" : "1.0",
+"UpdateDescription" : "null",
+"ButtonUpdate" : "https://update",
+
+"Announcement" : "true",
+"AnnouncementDescription" : "Welcome to FF Tools",
+"ButtonAnnouncement" : "https://announcement"
+}
