@@ -5,3 +5,10 @@
 	</a>
 	<br>
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Explanation: https://css-tricks.com/custom-styles-in-github-readmes/
