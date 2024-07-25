@@ -1,173 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Free Fire: 7th Anniv</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
-    <style>
-        * {
-            font-family: 'Poppins', sans-serif;
-            max-height: 100vh;
-        }
-        div.scrollmenu {
-            background-color: transparent;
-            overflow: auto;
-            white-space: nowrap;
-            margin: 10px;
-            border-radius: 16px;
-        }
-
-        div.scrollmenu::-webkit-scrollbar {
-            display: none;
-        }
-
-        div.scrollmenu img {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 0 5px;
-            text-decoration: none;
-            height: 250px;
-            border-radius: 20px;
-        }
-
-        .arrow {
-            border: solid #ababab;
-            border-width: 0 3px 3px 0;
-            display: inline-block;
-            padding: 3px;
-        }
-
-        /* Footer styles */
-        footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: #292a29;
-            color: #fafafa;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <title>FFInformation</title>
+  <meta name='og:title' content='FFInformation'>
+  <meta name='subtitle' content='Enhance Gaming'>
+  <meta name='description' content='150 words'>
+  <meta name='topic' content='gaming'>
+  <meta name='author' content='jinix6'>
+  <meta name='owner' content='jinix6'>
+  <meta name='url' content='https://jinix6.github.io/FFInformation/'>
+  <meta name='identifier-URL' content='https://jinix6.github.io/FFInformation/'>
+  <meta name='target' content='all'>
+  <meta http-equiv='imagetoolbar' content='no'>
+  <meta name="google-site-verification" content="J20YkdBYbFS0_YZdIu9Z-sKGKzYZfqOFFkQ0numjLq0" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5091585290601144" crossorigin="anonymous"></script>
 </head>
-<body style="background-color: #202320">
-
-<nav class="navbar navbar-light mb-2" style="height: 65px; width: 100%; background-color: #292a29; position: fixed; z-index: 1;">
-    <div class="container-fluid">
-        <div class="justify-content-center" style="margin: auto">
-            <img src="https://www.cyrust.app/favicon.ico" alt="" style="height: 50px; width: 50px">
-        </div>
+<body class="bg-slate-900 mx-5 my-5">
+  <div class="text-center">
+    <input value="" id="playerUIDInput" class="rounded-lg hover:bg-slate-700 bg-slate-800 border border-[#253146] border-double w-full text-white px-5 py-2 focus:outline-none font-mono transition-colors duration-250 ease-[cubic-bezier(0.23, 1, 0.32, 1)]" type="number" placeholder="Enter uid here">
+    <div class="mt-3 relative w-full custom-dropdown" id="regionDropdown">
+      <div id="dropdown-button" class="transition-all duration-300 ease-out rounded-lg block w-full p-2.5 bg-slate-800 text-white font-mono border border-[#253146] border-double" onclick="toggleDropdown()">Select region</div>
+      <div class="dropdown-menu transition-all duration-300 ease-out shadow-lg max-h-0 overflow-hidden absolute w-full bg-slate-800 text-white font-mono rounded-b-lg" id="dropdownMenu"></div>
     </div>
-</nav>
-
-<div class="container" style="padding-top: 70px; padding-bottom: 100px;"> <!-- Tambahkan margin-bottom di sini -->
-    <div class="d-flex mb-3">
-        <img src="https://play-lh.googleusercontent.com/nIV146CRuDyVKmYaXWtFR0BK7iZFqq4UyQPfY_iZOqolvk-USWmG9YupzKWDsN59fm6K=s48-rw" alt="" class="mt-3 rounded-3" style="width: 80px; height: 80px">
-        <div>
-            <p class="text-light ms-3 mt-4 mb-4">
-                <span style="font-size: 22px; font-weight: bold">Free Fire: 7th Anniv</span>
-                <br>
-                <span style="font-size: 12px; color: #579422">com.dts.freefireth</span>
-            </p>
-        </div>
-    </div>
-    <a class="btn btn-success col-12 rounded-pill mb-3 text-dark" href="https://fahrezonedev.github.io/g-vortex-android/">
-        <strong><i class="fa-solid fa-download"></i> Download</strong>
-    </a>
-    <p style="color: #fafafa" class="m-3 d-flex justify-content-between">
-        Description
-        <a
-            class="text-decoration-none text-light collapsed"
-            data-bs-toggle="collapse"
-            href="#collapseExample"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-        >
-            <i class="fa-solid fa-chevron-down"></i>
-        </a>
-    </p>
-    <p
-        class="card card-body py-0"
-        style="
-            background-color: transparent;
-            color: #707370;
-            border-radius: 10px;
-            border: none;
-            font-size: 14px;
-        "
-    >
-        Let's celebrate the 7th Anniversary of Free Fire together!
-    </p>
-
-    <div class="collapse" id="collapseExample">
-        <div
-          class="card card-body"
-          style="
-            background-color: #292a29;
-            color: #707370;
-            border-radius: 10px;
-            font-size: 14px;
-          "
-        >
-          <p><strong> [Mini Peak]</strong></p>
-<p>Come back and experience one of the most memorable Free Fire areas! Interact with the Memory Portal in Battle Royale to enter Mini Peak for intense combat, where you can get old weapons like the M1887 Old to bring into the fight! Apart from that, experience Mini Peak in Clash Squad randomly.</p>
-
-<p><strong>[Clash Squad: FPP]</strong></p>
-<p>Clash Squad with a first person perspective! This new perspective brings a different gaming experience. Ready to try it?</p>
-
-<p><strong>[Cosmic Racer]</strong></p>
-<p>The new flying vehicle, Skyblaster, is here! Play with friends and play in this very exciting mode!</p>
-
-<p><strong>[New Character]</strong></p>
-<p>Meet Kassie, a scientist who can connect with teammates and continuously restore HP.
-
-Free Fire is the most famous mobile shooting game in the world. Every 10 minutes of play places you on a remote island where you will compete against 49 other players, all fighting to survive. Players freely choose their descent location with a parachute, and try to stay in the safe zone as long as possible. Drive vehicles to explore the map, hide in the wilderness, or become invisible by hiding in grass and bushes. Ambush, aim, defend, for only one goal: survive and answer the call of duty.
-
-Free Fire, Battle In Style!
-</p>
-<p><strong>[Best Battle Royale Game]</strong></p>
-<p>Look for weapons, stay in the safe zone, defeat your enemies and survive until the end. During the game, find the Legendary Airdrop while dodging air attacks to gain a slight edge over your opponent.
-</p>
-<p><strong>[10 minutes, 50 players, battle for survival is waiting for you]</strong></p>
-<p>Fast and light gameplay - within 10 minutes, a new survivor will appear. Will you go above and beyond the call of duty and be the best?</p>
-
-<p><strong>[4-person squad, with in-game voice chat]</strong></p>
-<p>Create a squad of up to 4 players and establish communication with your squad from the start. Lead your friends to victory and be the last team standing victorious at the top!</p>
-  
-<p><strong>[Clash Squad]</strong></p>
-<p>Fast phase 4v4 mode is now open every day! Manage your finances, buy weapons, and defeat your enemies!</p>
-
-<p><strong>[Realistic and smooth graphics]</strong></p>
-<p>Easy controls and smooth graphics guarantee an optimal experience that you will find on your device to join the ranks of legends</p>
-          
-     
-          
-        </div>
-    </div>
-
-    <div class="scrollmenu">
-        <img src="https://play-lh.googleusercontent.com/Ys7-62_MzDo9uemS0YgqDpM5GWTJo6NTLo6TED71pSnySj58d1R8FyrJ5vh8ekv47g=w526-h296-rw" alt="Image 1">
-        <img src="https://play-lh.googleusercontent.com/SzMX-LaYOHtkLw77UDy82SWlZct3TysnTXLHH0Jrb6rRJVNI7LgFncDIJXI7TQhEjYiR=w526-h296-rw" alt="Image 2">
-        <img src="https://play-lh.googleusercontent.com/2KOf1sWodWjumHTL_I0KVfyz0LWBtr067B3hCN8Tie__2qG3ARg226Xi2_krODohd11R=w526-h296-rw" alt="Image 3">
-        <img src="https://play-lh.googleusercontent.com/A1Nph7hvWZWkbdoVyF0UunxSGONRlKPB0yc2GHe9xxxEMh7q4ACkpk-iTrEc_5K5cPve=w526-h296-rw" alt="Image 4">
-    </div>
+    <button class="rounded-lg px-5 border border-[#253146] border-double font-mono text-center mt-3 mb-3 transition-all duration-250 ease-[cubic-bezier(0.23, 1, 0.32, 1)] py-2 bg-slate-800 text-white hover:bg-slate-950" id="submitButton">Submit</button>
+  </div>
+  <div id="root" class=""></div>
+  <p class="text-white font-mono" id="log"></p>
+  <div class="mt-5 invisible" id="MaineyranRoot">
+  <h1 class="text-white font-mono mb-5 text-slate-400 text-xl">Some Photos:</h1>
+  <div id="eyranRoot" class="grid grid-cols-4 gap-4">
+  </div>
 </div>
-
-<footer>
-    <p>Thanks</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
+  <style>
+    .loader {
+      border-top-color: #3498db;
+      border-left-color: #3498db;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .custom-dropdown.open .dropdown-menu {
+      max-height: 600px;
+    }
+  </style>
+  <script src="main.js"></script>
+  <script type="module" src="auth.js"></script>
 </body>
 </html>
