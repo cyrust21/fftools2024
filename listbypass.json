@@ -1,25 +1,13 @@
 [{
 "filename":"Config bypass",
 "config":"DNS Firewall",
-"type":".Online",
-"size":"2.6 MB",
-"link":"https://google.com"},
+"type":".RBK",
+"size":"1.3 MB",
+"link":"https://github.com/cyrust21/fftools2024/raw/main/dns/Bypass1.rbk"},
 {
 "filename":"Config bypass",
 "config":"DNS Firewall",
 "type":".RBK",
-"size":"2.6 MB",
-"link":"https://google.com"},
-{
-"filename":"Config bypass",
-"config":"DNS Firewall",
-"type":".RBK",
-"size":"2.6 MB",
-"link":"https://google.com"},
-{
-"filename":"Config bypass",
-"config":"DNS Firewall",
-"type":".Online",
-"size":"2.6 MB",
-"link":"https://google.com"
+"size":"0.8 MB",
+"link":"https://github.com/cyrust21/fftools2024/raw/main/dns/Bypass2.rbk"
 }]
